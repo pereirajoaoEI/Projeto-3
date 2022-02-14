@@ -1,0 +1,20 @@
+test:
+    name: basic-contract-benchmark
+    description: test benchmark
+    workers:
+      type: local
+      number: 2
+    rounds:
+      - label: readImovel
+        description: Imovel benchmark
+        txDuration: 30
+        rateControl: 
+          type: fixed-load
+          opts:
+            tps: 10
+        workload:
+          module: /home/joao/projeto3/caliper/readImovel.js
+          arguments:
+            assets: 10
+            contractId: imovel
+

@@ -1,0 +1,22 @@
+{
+    "caliper": {
+        "blockchain": "ethereum",
+        "command" : { }
+    },
+    "ethereum": {
+        "url": "ws://localhost:7545",
+        "contractDeployerAddress": "0x0b861CDfeF5Ce972A2974EF2316Ea7a17e075aCA",
+        "fromAddress": "0x9502D89cc53811129D9F01Ee59B4BE0437454928",
+        "transactionConfirmationBlocks": 2,
+        "contracts": {
+            "simple": {
+                "path": "client/src/contracts/Imovel.json",
+                "gas": {
+                    "open": 45000,
+                    "query": 100000,
+                    "transfer": 70000
+                }
+            }
+        }
+    }
+}

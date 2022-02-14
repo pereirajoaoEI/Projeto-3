@@ -1,0 +1,11 @@
+test:
+  workers:
+    type: local
+    number: 2
+  rounds:
+  - label: getImoveis
+    txNumber: 100
+    rateControl: { type: 'fixed-rate', opts: { tps: 10 } }
+    arguments:
+      money: 10000
+    callback: getImoveis.js

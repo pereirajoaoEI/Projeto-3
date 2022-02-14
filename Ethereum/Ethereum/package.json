@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@hyperledger/caliper-cli": "^0.4.2",
+    "truffle": "^5.4.29",
+    "web3": "^1.2.2"
+  }
+}
